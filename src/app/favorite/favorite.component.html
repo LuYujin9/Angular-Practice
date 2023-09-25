@@ -1,0 +1,10 @@
+<button (click)="onFavorite()" [style.color]="isFavorite ? 'red' : 'black'">
+  <i class="bi bi-star" width="1em"></i>
+</button>
+
+<span
+  class="bi"
+  (click)="onFavorite()"
+  [class.bi-star]="!isFavorite"
+  [class.bi-star-fill]="isFavorite"
+></span>
