@@ -8,6 +8,8 @@ import { CoursesService } from './courses/courses.service';
 import { AuthorsComponent } from './authors/authors.component';
 import { AuthorsService } from './services/authors.service';
 import { FavoriteComponent } from './favorite/favorite.component';
+import { InputComponent } from './input/input.component';
+import { TitleCasePipe } from './title-case.pipe';
 
 @NgModule({
   declarations: [
@@ -15,6 +17,8 @@ import { FavoriteComponent } from './favorite/favorite.component';
     CoursesComponent,
     AuthorsComponent,
     FavoriteComponent,
+    InputComponent,
+    TitleCasePipe,
   ], //add all the components, only with it we can add courses component in html
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [CoursesService, AuthorsService], //Dependency injection
