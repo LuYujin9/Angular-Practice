@@ -1,5 +1,15 @@
 <!-- external template for app component -->
 <h1>Angular</h1>
+<change-password-form></change-password-form>
+<signup-form></signup-form>
+<like
+  [isActive]="tweet.isLiked"
+  [likesCount]="tweet.likesCount"
+  (change)="onLikeChanged($event)"
+/>
 
 <input type="text" [(ngModel)]="text" />
 <p>{{ text | titleCase }}</p>
+<zippy title="Shipping Details">Shipping Details content</zippy>
+<zippy title="Billing Details">Billing Details content</zippy>
+<create-course-form />
